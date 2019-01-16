@@ -1,0 +1,5 @@
+1) nvm install node = installa node js
+2) npm install -g @angular/cli = installa console dei comandi di angular
+3) ng new (nome applicazione) = crea tante cartelle che sono applicazione angular
+4) cd (nome applicazione) = serve per entrare dentro alla cartella
+5) ng serve = lancia il compilatore angular

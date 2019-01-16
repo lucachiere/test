@@ -1,0 +1,68 @@
+ANGULAR
+
+- Cos'è   -->  Framework per realizare aoolicazione che vanno su broweser e telefono scritto in typescript --> Superset di javascript
+
+- le app Angular sono scritte in javascript
+
+- Broweser non interpretano Typescript
+      |__ l'app Angular va compilata con la Browser CLI
+
+
+ANGULAR CLI
+
+- Ambiente a riga di comando che upporta lo sviluppo angular
+   |__ comandi super utili:
+       -NG NEW NOME_APP   =     Crea una nuova applicazione
+       -NG SERVE          =     Apre un web server alla porta 4200, compila l'app ogni volta che salvate un file
+       -NG GENERATE COMPONENT NOME_COUP
+
+
+COMPONENTI ANGULAR
+
+- Porzioni di un'applicazione
+               esempio: 
+                         _________________
+                         |---------------|    <-- componente menù
+                         |           |   |
+                         |           |   |
+                         |___________|___|
+
+
+COME FARE UN COMPONENTE
+
+- Sono necessarie 3 parti, noi le scriviamo in 3 file separati
+  - Template          -->     File HTML
+  - Stile             -->     File CSS
+  - Codice Typescript -->     File.ts
+
+
+FILE.TS
+
+- Diviso in 3 parti:
+          |
+          |_ Dipendenze
+          |
+          |_ Decoratore --> Component
+          |
+          |_ Classe     --> Export class
+
+
+DECORATORE @ COMPONENT
+
+- Qui definiamo:
+   - Selector --> <esempio> [il tag che useremo nell'HTML per dichiarare il componente]
+   - Il template URL  [Dove si trova la parte HTML]
+   - Lo stile URL   [Dove si trova la parte CSS]
+
+
+COMPONENTE DI ESEMPIO
+
+import{...}
+@component({
+    selector: 'esempio', 
+    templateUrl: './esempio.component html',
+    styleUrls: ['./esempio.component css']
+})
+export class esempio.......
+{Construction(){...}
+}
